@@ -335,9 +335,12 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.display.version=$(CM_DISPLAY_VERSION)
 
+-include vendor/cm/config/common_ukm.mk
+
 # CyanogenMod Platform SDK Version
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.build.version.plat.sdk=$(CM_PLATFORM_SDK_VERSION)
+
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
